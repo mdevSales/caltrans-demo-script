@@ -272,28 +272,39 @@
             <p>Click the <strong>Grants Playbook</strong> tab on the same Opportunity</p>
         </div>
         <div class="say">
-            <p>"This is the grants playbook — a screen flow, native to Salesforce. Think of it as the T-14-to-T-0 checklist for submitting TIRCP, rendered on the record. What Sarah gets:"</p>
+            <p>"This is the <strong>Grant Program Fit Playbook</strong> — a screen flow, native to Salesforce. Think of it as a structured 5-to-7-minute conversation the rep has with the applicant to assess program fit, project readiness, and next steps. Nine short screens."</p>
+            <p>"What's on the flow:"</p>
             <ul>
-                <li>Day-by-day rep actions leading into submission</li>
-                <li>The attachments checklist — engineer's estimate, PSR equivalency, CEQA/NEPA, DAC evidence</li>
-                <li>What to expect after submit — the 8-to-10-week window to CTC Final Scores</li>
+                <li><strong>Opportunity + Program Context</strong> — confirm grant program, applicant type, funding request, geography</li>
+                <li><strong>Program Guidance</strong> — a program-specific refresher (TIRCP, ATP, Clean California, etc.) so the rep goes in briefed</li>
+                <li><strong>Discovery</strong> — the challenge, beneficiaries, sponsor, timeline, whether they've applied before</li>
+                <li><strong>Program Alignment</strong> — applicant/category eligibility, geographic scope, priority alignment, public benefit</li>
+                <li><strong>Project Readiness</strong> — scope, budget, schedule, plan inclusion, partners, community engagement, delivery risks, admin capacity</li>
+                <li><strong>Match-Funding Readiness</strong> — required? confirmed? in progress?</li>
+                <li><strong>Technical Assistance Needs</strong> — multi-select where the applicant needs help</li>
+                <li><strong>Recommendation</strong> — the flow computes Program Fit, Readiness score (0-6), Risk level, and a Recommended Next Step. Rep can accept or override.</li>
+                <li><strong>Follow-Up Actions</strong> — pick from schedule readiness session, send materials, refer to TA, eligibility review, draft email, etc.</li>
             </ul>
-            <p>"Every step is grounded in the <em>actual</em> Caltrans process — the Submittable portal, PSR equivalency, CTC scoring cadence. This isn't a generic 'sales stage checklist' — it's built for TIRCP by someone who's submitted TIRCP."</p>
-            <p>"And this one <em>writes back</em> — it's not a PDF SOP or a static checklist. What the rep does inside the playbook lands on the record."</p>
+            <p>"Every screen is grounded in the <em>real</em> Caltrans grants process — the fields, the eligibility questions, the program-specific priorities. It's not a generic sales stage checklist."</p>
+            <p>"And this one <em>writes back</em>. The recommendation, readiness score, risk level, and TA needs all update the Opportunity, and every follow-up action selected becomes a Task assigned to the rep."</p>
         </div>
         <div class="do">
             <span class="do-tag">DO</span>
-            <p>Click <strong>Next</strong> → the Capture Next Step screen appears. Fill in:</p>
+            <p>Walk quickly — don't fill every field. Land on the meaningful ones:</p>
             <ul>
-                <li><strong>Next Step:</strong> Confirm Submittable portal test upload</li>
-                <li><strong>Follow-up date:</strong> 3 days out</li>
-                <li><strong>Subject:</strong> MTC — TIRCP portal test upload</li>
+                <li><strong>Screen 1 (Context):</strong> Grant Program = TIRCP, Applicant Type = MPO, funding pre-filled from the record</li>
+                <li><strong>Screen 2 (Guidance):</strong> pause on the TIRCP guidance card — GHG focus, June 2027 deadline, priorities</li>
+                <li><strong>Screens 3-5:</strong> click through Discovery / Alignment / Readiness — pick "Yes" on eligibility, check a few readiness boxes</li>
+                <li><strong>Screen 6 (Match):</strong> Match Required = No (TIRCP), leveraged funding = In Progress</li>
+                <li><strong>Screen 7 (TA):</strong> check "Application Preparation" + "Data or Performance Measures"</li>
+                <li><strong>Screen 8 (Recommendation):</strong> pause here — <em>this is the hero screen</em>. Show the computed Program Fit, Readiness score, Risk level, Recommended Next Step</li>
+                <li><strong>Screen 9 (Follow-Up):</strong> check "Send grant-program materials" + "Schedule a project-readiness session"</li>
+                <li>Click <strong>Finish</strong></li>
             </ul>
-            <p>Click <strong>Finish</strong></p>
         </div>
         <div class="say">
-            <p>"Look what just happened — Opportunity's Next Step field updated, a follow-up Task landed on Sarah's timeline. The playbook didn't just tell her what to do; it wrote what she committed to <em>back</em> onto the record."</p>
-            <p>"And the piece I want your admin team to hear: when CTC changes a rule next cycle — attachment types, scoring criteria, portal cutoff — a grants ops admin edits this flow in an afternoon. No code, no vendor engagement, no release train."</p>
+            <p>"Look what just happened. The Opportunity picked up the recommendation and readiness score. Two follow-up Tasks landed on the rep's timeline. That five-minute conversation is now a <em>durable</em> assessment on the record — the next person who touches this deal doesn't have to redo the discovery."</p>
+            <p>"And the piece I want your admin team to hear: when CTC updates a program's priorities next cycle — new eligible categories, changed match rules, new scoring criteria — a grants ops admin edits the flow's guidance and choices in an afternoon. No code, no vendor engagement, no release train."</p>
         </div>
     </section>
 
@@ -322,7 +333,7 @@
                 <button class="btn copy-btn" data-copy="p1">Copy</button>
             </div>
             <pre id="p1">Give me a 30-second briefing on this opportunity. Where is MTC in the TIRCP Cycle 7 process, what have we done for them so far, and what's the single most important thing Sarah needs from us this week?</pre>
-            <p class="prompt-hint">Agent pulls: Stage = Ready to Apply, $4.2M, Prior Grants Awarded = 12, most recent activities (workshop attendance + discovery calls), submission date. Answer names portal test upload as the this-week priority.</p>
+            <p class="prompt-hint">Agent pulls: Stage = Ready to Apply, $4.2M, Prior Grants Awarded = 12, most recent activities (workshop attendance + discovery calls), submission date. Answer names the readiness session + materials send that came out of the playbook as the this-week priority.</p>
         </div>
 
         <div class="prompt-block">
@@ -330,7 +341,7 @@
                 <span class="prompt-label">TIRCP PROMPT 2 · Draft the follow-up</span>
                 <button class="btn copy-btn" data-copy="p2">Copy</button>
             </div>
-            <pre id="p2">Draft a follow-up email to Sarah confirming her Submittable portal test upload for TIRCP Cycle 7. Under 80 words, professional but warm, mention we're 14 days out from submission and offer to jump on a call if she hits any portal issues.</pre>
+            <pre id="p2">Draft a follow-up email to Sarah for the TIRCP Cycle 7 opportunity. Confirm we'll send the program materials this week and propose two times next week for a project-readiness session. Under 80 words, warm but professional.</pre>
             <p class="prompt-hint">Uses Contact = Sarah Kim, Opportunity = MTC TIRCP Cycle 7, Submission Date field. Concrete, personalized, ready to send.</p>
         </div>
 
@@ -454,7 +465,8 @@
             <li><label><input type="checkbox"> MTC — TIRCP (Cycle 7) open in a background tab for Stops 3-6</label></li>
             <li><label><input type="checkbox"> Grants Funnel Stage on MTC — TIRCP is <strong>Ready to Apply</strong></label></li>
             <li><label><input type="checkbox"> Grants Advisor Agentforce agent enabled + reachable</label></li>
-            <li><label><input type="checkbox"> Clear prior test tasks with subject "MTC — TIRCP portal test upload"</label></li>
+            <li><label><input type="checkbox"> Clear prior test Tasks on MTC — TIRCP (Cycle 7) so the playbook's new follow-up tasks stand out</label></li>
+            <li><label><input type="checkbox"> Grant Program Fit Playbook flow is active and reachable from the Opportunity's <strong>Grants Playbook</strong> tab</label></li>
         </ul>
     </section>
 
