@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caltrans Demo — 15 min Sales Cloud Script</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+    <div class="brand">
+        <span class="dot"></span>
+        <h1>Caltrans Grants Demo — Sales Cloud</h1>
+    </div>
+    <div class="clock">
+        <div class="clock-time" id="clockTime">15:00</div>
+        <div class="clock-controls">
+            <button id="btnStart" class="btn primary">Start</button>
+            <button id="btnPause" class="btn">Pause</button>
+            <button id="btnReset" class="btn ghost">Reset</button>
+        </div>
+        <div class="clock-progress"><div class="clock-fill" id="clockFill"></div></div>
+    </div>
+</header>
+
+<nav class="stopnav" id="stopNav"></nav>
+
+<main class="stops" id="stops">
+
+    <!-- ============ STOP 0 ============ -->
+    <section class="stop" id="stop-0" data-duration="30">
+        <header class="stop-head">
+            <div class="stop-number">0</div>
+            <div class="stop-meta">
+                <h2>Handoff from Matt</h2>
+                <div class="stop-time"><span>30s</span> · cumulative <strong>0:30</strong></div>
+            </div>
+            <button class="btn done-btn" data-target="stop-0">Mark done</button>
+        </header>
+
+        <div class="say">
+            <p>"Thanks Matt. So you just saw the outreach engine — segments, journeys, forms, the campaign that hits DAC-priority agencies in three languages. Now let's follow a lead from that landing page <strong>into Sales Cloud</strong>, where it gets qualified, worked, and moved through the grants funnel. Same platform, same data, no integration to build."</p>
+        </div>
+        <div class="do">
+            <span class="do-tag">DO</span>
+            <p>App Launcher → <strong>Sales</strong></p>
+        </div>
+    </section>
+
+    <!-- ============ STOP 1 ============ -->
+    <section class="stop" id="stop-1" data-duration="90">
+        <header class="stop-head">
+            <div class="stop-number">1</div>
+            <div class="stop-meta">
+                <h2>Homepage — Pipeline Dashboard</h2>
+                <div class="stop-time"><span>1:30</span> · cumulative <strong>2:00</strong></div>
+            </div>
+            <button class="btn done-btn" data-target="stop-1">Mark done</button>
+        </header>
+
+        <div class="say">
+            <p>"This is what the grants outreach team sees Monday morning. Pipeline by stage — outreach, TA, LOI, ready to apply, awarded. Activity by rep. Top engaged accounts."</p>
+            <p>"<strong>The payoff of Matt's campaigns lands here</strong> — no BI tool to stand up, native to the platform you already own for PSC Grantmaking."</p>
+        </div>
+        <div class="do">
+            <span class="do-tag">DO</span>
+            <p>Point at the "Ready to Apply" bucket: <em>"Twenty-two million in applications going out this cycle."</em></p>
+        </div>
+        <div class="transition">
+            <span class="t-tag">→</span> "Let's drill into one of these hot leads."
+        </div>
+    </section>
+
+    <!-- ============ STOP 2 ============ -->
+    <section class="stop" id="stop-2" data-duration="150">
+        <header class="stop-head">
+            <div class="stop-number">2</div>
+            <div class="stop-meta">
+                <h2>Contact — Engagement Timeline</h2>
+                <div class="stop-time"><span>2:30</span> · cumulative <strong>4:30</strong></div>
+            </div>
+            <button class="btn done-btn" data-target="stop-2">Mark done</button>
+        </header>
+
+        <div class="do">
+            <span class="do-tag">DO</span>
+            <p>Contacts tab → List View <strong>High Engagement Contacts</strong> → open <strong>Sarah OConnor (MTC)</strong></p>
+        </div>
+        <div class="say">
+            <p>"Sarah's a Grant Administrator at Metropolitan Transportation Commission — the Bay Area MPO. Look at her Engagement Score: <strong>92</strong>. Why?"</p>
+        </div>
+        <div class="do">
+            <span class="do-tag">DO</span>
+            <p>Scroll to Activity Timeline. Point out the <code>[Caltrans Seed]</code> emails, info session, TA workshop, pre-app review.</p>
+        </div>
+        <div class="say">
+            <p>"Every one of these touches came from Matt's Marketing Cloud campaigns — emails, info session invites, TA workshop follow-ups. <strong>Captured natively via Einstein Activity Capture.</strong> No sync job, no data extract. This is the HubSpot email-tracking equivalent, but the emails, opens, and opportunities all live on one record."</p>
+        </div>
+        <div class="transition">
+            <span class="t-tag">→</span> "Sarah's tied to MTC's TIRCP application — the big one. Let's go to her account."
+        </div>
+    </section>
+
+    <!-- ============ STOP 3 ============ -->
+    <section class="stop" id="stop-3" data-duration="120">
+        <header class="stop-head">
+            <div class="stop-number">3</div>
+            <div class="stop-meta">
+                <h2>Account — Metropolitan Transportation Commission</h2>
+                <div class="stop-time"><span>2:00</span> · cumulative <strong>6:30</strong></div>
+            </div>
+            <button class="btn done-btn" data-target="stop-3">Mark done</button>
+        </header>
+
+        <div class="do">
+            <span class="do-tag">DO</span>
+            <p>Click into <strong>Metropolitan Transportation Commission (MTC)</strong></p>
+        </div>
+        <div class="say">
+            <p>"Here's the applicant profile Matt was segmenting on. Agency Type: MPO. Caltrans District: 4. Prior Grants Awarded: 12. Disadvantaged Community flag rolls up from the served region."</p>
+        </div>
+        <div class="do">
+            <span class="do-tag">DO</span>
+            <p>Scroll to the activity rollup</p>
+        </div>
+        <div class="say">
+            <p>"Every touch across the account team — Sarah's emails, discovery calls, workshop attendance — rolls up here. <strong>One pane of glass</strong> for the applicant agency. Compare this to bouncing between HubSpot for outreach and a separate CRM for pipeline."</p>
+        </div>
+        <div class="do">
+            <span class="do-tag">DO</span>
+            <p>Point at Related Opportunities</p>
+        </div>
+        <div class="say">
+            <p>"Four open opportunities across four different grant programs. This one — TIRCP, Cycle 7 — is <strong>$4.2 million</strong> and ready to apply."</p>
+        </div>
+        <div class="do">
+            <span class="do-tag">DO</span>
+            <p>Click into <strong>MTC — TIRCP (Cycle 7)</strong></p>
+        </div>
+    </section>
+
+    <!-- ============ STOP 4 ============ -->
+    <section class="stop hero" id="stop-4" data-duration="180">
+        <header class="stop-head">
+            <div class="stop-number">4</div>
+            <div class="stop-meta">
+                <h2>Opportunity — Stage-Driven Dynamic Layout</h2>
+                <div class="stop-time"><span>3:00</span> · cumulative <strong>9:30</strong> · <span class="hero-tag">HERO MOMENT</span></div>
+            </div>
+            <button class="btn done-btn" data-target="stop-4">Mark done</button>
+        </header>
+
+        <div class="do">
+            <span class="do-tag">DO</span>
+            <p>Land on the Opportunity, Details tab is active</p>
+        </div>
+        <div class="say">
+            <p>"Here's where the rep experience adapts. Grants Funnel Stage: <strong>Ready to Apply</strong>. Look at the sections showing right now — Grant Deal Overview at top, then <strong>Submission Prep</strong> with the fields the rep actually needs to touch in the final two weeks: match funding source, funding cycle, probability, submission date."</p>
+        </div>
+        <div class="do critical">
+            <span class="do-tag">DO ✱</span>
+            <p>Change the Grants Funnel Stage picklist to <strong>"Technical Assistance"</strong>. Save. Wait for the page to refresh.</p>
+        </div>
+        <div class="say">
+            <p>"Watch this. Same record. Different stage. The sections <strong>swap live</strong>."</p>
+        </div>
+        <div class="do">
+            <span class="do-tag">DO</span>
+            <p>Point at the new TA section</p>
+        </div>
+        <div class="say">
+            <p>"Now the rep sees TA-specific fields: whether TA is needed, workshop cycle, match funding red flag. This is <strong>Dynamic Forms</strong> — declarative, admin-configured, zero code. HubSpot playbooks are a workaround for what Salesforce does natively via record-page logic."</p>
+        </div>
+        <div class="do critical">
+            <span class="do-tag">DO ✱</span>
+            <p>Change back to <strong>"Ready to Apply"</strong> (resets for the next demo)</p>
+        </div>
+        <div class="say handoff">
+            <p><em>Handoff cue back to Matt:</em> "And when the stage changes, it can also <strong>trigger Matt's journey</strong> on the marketing side — post-decision debrief invites, award celebration nurtures. One data model, both engines."</p>
+        </div>
+    </section>
+
+    <!-- ============ STOP 5 ============ -->
+    <section class="stop" id="stop-5" data-duration="150">
+        <header class="stop-head">
+            <div class="stop-number">5</div>
+            <div class="stop-meta">
+                <h2>Grants Playbook — Screen Flow</h2>
+                <div class="stop-time"><span>2:30</span> · cumulative <strong>12:00</strong></div>
+            </div>
+            <button class="btn done-btn" data-target="stop-5">Mark done</button>
+        </header>
+
+        <div class="do">
+            <span class="do-tag">DO</span>
+            <p>Click the <strong>Grants Playbook</strong> tab on the same Opportunity</p>
+        </div>
+        <div class="say">
+            <p>"This is a <strong>screen flow</strong> — the native Salesforce playbook. Look at what a rep gets:"</p>
+            <ul>
+                <li>T-14 through T-0 rep actions</li>
+                <li>Attachments checklist (engineer's estimate, PSR equivalency, CEQA/NEPA, DAC evidence)</li>
+                <li>Post-submission expectations — 8–10 weeks to CTC Final Scores</li>
+            </ul>
+            <p>"Every one of these steps is <strong>grounded in real Caltrans process</strong> — Submittable portal, PSR equivalency, CTC scoring timeline. And unlike a static HubSpot playbook, this thing writes back."</p>
+        </div>
+        <div class="do">
+            <span class="do-tag">DO</span>
+            <p>Click <strong>Next</strong> → the Capture Next Step screen appears. Fill in:</p>
+            <ul>
+                <li><strong>Next Step:</strong> Confirm Submittable portal test upload</li>
+                <li><strong>Follow-up date:</strong> 3 days out</li>
+                <li><strong>Subject:</strong> MTC — TIRCP portal test upload</li>
+            </ul>
+            <p>Click <strong>Finish</strong></p>
+        </div>
+        <div class="say">
+            <p>"Opportunity's Next Step field just updated. A follow-up Task just landed on Sarah's activity timeline. <strong>Declarative, native, and any admin on the grants team can edit the checklist as CTC guidelines change</strong> — no code, no vendor call."</p>
+        </div>
+    </section>
+
+    <!-- ============ STOP 6 ============ -->
+    <section class="stop" id="stop-6" data-duration="150">
+        <header class="stop-head">
+            <div class="stop-number">6</div>
+            <div class="stop-meta">
+                <h2>Agentforce — Playbook Alternative</h2>
+                <div class="stop-time"><span>2:30</span> · cumulative <strong>14:30</strong></div>
+            </div>
+            <button class="btn done-btn" data-target="stop-6">Mark done</button>
+        </header>
+
+        <div class="do">
+            <span class="do-tag">DO</span>
+            <p>Click the <strong>Agentforce copilot icon</strong> (right sidebar, star icon)</p>
+        </div>
+        <div class="say">
+            <p>"The flow is one option. Here's the other — <strong>Agentforce</strong>. The agent has full context: this is MTC's TIRCP application, Ready to Apply, $4.2M, Sarah's the contact, here's the activity history. Watch."</p>
+        </div>
+
+        <div class="prompt-block">
+            <div class="prompt-header">
+                <span class="prompt-label">PROMPT 1 · Context briefing</span>
+                <button class="btn copy-btn" data-copy="p1">Copy</button>
+            </div>
+            <pre id="p1">Give me a 30-second briefing on this opportunity — where is the applicant, what have we done for them, and what's the single most important thing to do next.</pre>
+            <p class="prompt-hint">Lands the "it knows the deal context" point.</p>
+        </div>
+
+        <div class="prompt-block">
+            <div class="prompt-header">
+                <span class="prompt-label">PROMPT 2 · Drafting</span>
+                <button class="btn copy-btn" data-copy="p2">Copy</button>
+            </div>
+            <pre id="p2">Draft a follow-up email to Sarah confirming her Submittable portal upload for TIRCP Cycle 7. Keep it under 80 words, professional tone, mention we're 14 days out from submission.</pre>
+            <p class="prompt-hint">Real email using contact + opportunity + cycle context. "Beyond static playbook" moment.</p>
+        </div>
+
+        <div class="prompt-block">
+            <div class="prompt-header">
+                <span class="prompt-label">PROMPT 3 · Next-best-action reasoning</span>
+                <button class="btn copy-btn" data-copy="p3">Copy</button>
+            </div>
+            <pre id="p3">Based on MTC's TIRCP application status and prior award history, what's the biggest scoring risk for this application and how do we mitigate it?</pre>
+            <p class="prompt-hint">Agent reasons across Prior_Grants_Awarded + Opportunity fields + grants domain knowledge.</p>
+        </div>
+
+        <div class="say">
+            <p>"So — two playbook flavors. Declarative flow for the checklist crowd. Agentforce for reps who want a copilot that reasons over the whole record. <strong>Both native. Both on the same platform your PSC Grantmaking already runs on.</strong>"</p>
+        </div>
+    </section>
+
+    <!-- ============ STOP 7 ============ -->
+    <section class="stop" id="stop-7" data-duration="30">
+        <header class="stop-head">
+            <div class="stop-number">7</div>
+            <div class="stop-meta">
+                <h2>Close</h2>
+                <div class="stop-time"><span>30s</span> · cumulative <strong>15:00</strong></div>
+            </div>
+            <button class="btn done-btn" data-target="stop-7">Mark done</button>
+        </header>
+
+        <div class="say">
+            <p>"Quick recap: Matt's campaigns bring engaged applicants in. Sales Cloud qualifies, categorizes, and works them through the grants funnel with stage-adaptive layouts, native playbooks, and an AI copilot that knows the deal. <strong>One platform, one data model, one place your grants team and your outreach team live.</strong>"</p>
+            <p>"Happy to dig in on any stop, or talk about how this connects into PSC Grantmaking downstream."</p>
+        </div>
+    </section>
+
+</main>
+
+<!-- Sidebar -->
+<aside class="sidebar">
+
+    <section class="side-block">
+        <h3>Backup Agentforce prompts</h3>
+        <div class="prompt-block small">
+            <div class="prompt-header">
+                <button class="btn copy-btn" data-copy="pb1">Copy</button>
+            </div>
+            <pre id="pb1">Who at MTC should we loop in besides Sarah for the TIRCP final review?</pre>
+        </div>
+        <div class="prompt-block small">
+            <div class="prompt-header">
+                <button class="btn copy-btn" data-copy="pb2">Copy</button>
+            </div>
+            <pre id="pb2">Compare MTC's engagement level to the other Ready-to-Apply opportunities this cycle.</pre>
+        </div>
+        <div class="prompt-block small">
+            <div class="prompt-header">
+                <button class="btn copy-btn" data-copy="pb3">Copy</button>
+            </div>
+            <pre id="pb3">Which of my open opportunities are at highest risk of missing their close date?</pre>
+        </div>
+        <div class="prompt-block small">
+            <div class="prompt-header">
+                <button class="btn copy-btn" data-copy="pb4">Copy</button>
+            </div>
+            <pre id="pb4">Draft talking points for a debrief call with an applicant who didn't win last cycle.</pre>
+        </div>
+    </section>
+
+    <section class="side-block">
+        <h3>If you run behind</h3>
+        <ol class="cut-list">
+            <li>Cut backup Agentforce prompts — do only Prompt 1 &amp; 2</li>
+            <li>Cut the stage-change click on Opportunity — describe verbally</li>
+            <li>Cut Account stop — Contact → Opportunity direct (saves 90s)</li>
+        </ol>
+    </section>
+
+    <section class="side-block">
+        <h3>Pre-demo checklist</h3>
+        <ul class="checklist">
+            <li><label><input type="checkbox"> Caltrans Opportunity Record Page is active as Org Default</label></li>
+            <li><label><input type="checkbox"> MTC — TIRCP (Cycle 7) open in a background tab, refreshed once</label></li>
+            <li><label><input type="checkbox"> Grants Funnel Stage on MTC — TIRCP is <strong>Ready to Apply</strong></label></li>
+            <li><label><input type="checkbox"> Agentforce agent is enabled and reachable</label></li>
+            <li><label><input type="checkbox"> Clear prior test tasks with subject "MTC — TIRCP portal test upload"</label></li>
+        </ul>
+    </section>
+
+    <section class="side-block">
+        <h3>Hero records</h3>
+        <ul class="hero-list">
+            <li><strong>MTC</strong> — Bay Area MPO, 12 prior grants, TIRCP Cycle 7 ($4.2M)</li>
+            <li><strong>Sarah OConnor</strong> — Grant Admin @ MTC, engagement 92</li>
+            <li><strong>MTC — TIRCP (Cycle 7)</strong> — Ready to Apply, hero opportunity</li>
+        </ul>
+    </section>
+
+</aside>
+
+<script src="app.js"></script>
+</body>
+</html>
