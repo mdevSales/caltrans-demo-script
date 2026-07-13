@@ -272,39 +272,39 @@
             <p>Click the <strong>Grants Playbook</strong> tab on the same Opportunity</p>
         </div>
         <div class="say">
-            <p>"This is the <strong>Grant Program Fit Playbook</strong> — a screen flow, native to Salesforce. Think of it as a structured 5-to-7-minute conversation the rep has with the applicant to assess program fit, project readiness, and next steps. Nine short screens."</p>
-            <p>"What's on the flow:"</p>
+            <p>"This is the <strong>Grant Program Fit Playbook</strong> — a guided flow native to the Opportunity record. Think of it as the structured 5-to-7-minute conversation Sarah has with the applicant to assess program fit, project readiness, and next steps. Nine short steps."</p>
+            <p>"What's on this flow:"</p>
             <ul>
-                <li><strong>Opportunity + Program Context</strong> — confirm grant program, applicant type, funding request, geography</li>
+                <li><strong>Context</strong> — confirm grant program, applicant type, funding request, geography (pre-filled from the record)</li>
                 <li><strong>Program Guidance</strong> — a program-specific refresher (TIRCP, ATP, Clean California, etc.) so the rep goes in briefed</li>
-                <li><strong>Discovery</strong> — the challenge, beneficiaries, sponsor, timeline, whether they've applied before</li>
+                <li><strong>Discovery</strong> — the challenge, beneficiaries, sponsor, timeline, prior-application history</li>
                 <li><strong>Program Alignment</strong> — applicant/category eligibility, geographic scope, priority alignment, public benefit</li>
                 <li><strong>Project Readiness</strong> — scope, budget, schedule, plan inclusion, partners, community engagement, delivery risks, admin capacity</li>
                 <li><strong>Match-Funding Readiness</strong> — required? confirmed? in progress?</li>
                 <li><strong>Technical Assistance Needs</strong> — multi-select where the applicant needs help</li>
-                <li><strong>Recommendation</strong> — the flow computes Program Fit, Readiness score (0-6), Risk level, and a Recommended Next Step. Rep can accept or override.</li>
+                <li><strong>Recommendation</strong> — the flow computes Program Fit, Readiness score (0-6), Risk level, Primary Risk, and a Recommended Next Step in real time. Rep can accept or override.</li>
                 <li><strong>Follow-Up Actions</strong> — pick from schedule readiness session, send materials, refer to TA, eligibility review, draft email, etc.</li>
             </ul>
-            <p>"Every screen is grounded in the <em>real</em> Caltrans grants process — the fields, the eligibility questions, the program-specific priorities. It's not a generic sales stage checklist."</p>
-            <p>"And this one <em>writes back</em>. The recommendation, readiness score, risk level, and TA needs all update the Opportunity, and every follow-up action selected becomes a Task assigned to the rep."</p>
+            <p>"Every step is grounded in the <em>real</em> Caltrans grants process — the fields, the eligibility questions, the program-specific priorities. It's not a generic sales stage checklist."</p>
+            <p>"And this one <em>writes back</em>. When Sarah clicks Finish, twelve assessment fields on the Opportunity get populated — recommendation, readiness score, risk level, primary risk, match readiness, TA needs, full summary — plus a follow-up Task with all the actions she selected."</p>
         </div>
         <div class="do">
             <span class="do-tag">DO</span>
-            <p>Walk quickly — don't fill every field. Land on the meaningful ones:</p>
+            <p>Click through the flow quickly — don't fill every field. Land on the meaningful ones:</p>
             <ul>
-                <li><strong>Screen 1 (Context):</strong> Grant Program = TIRCP, Applicant Type = MPO, funding pre-filled from the record</li>
-                <li><strong>Screen 2 (Guidance):</strong> pause on the TIRCP guidance card — GHG focus, June 2027 deadline, priorities</li>
-                <li><strong>Screens 3-5:</strong> click through Discovery / Alignment / Readiness — pick "Yes" on eligibility, check a few readiness boxes</li>
-                <li><strong>Screen 6 (Match):</strong> Match Required = No (TIRCP), leveraged funding = In Progress</li>
-                <li><strong>Screen 7 (TA):</strong> check "Application Preparation" + "Data or Performance Measures"</li>
-                <li><strong>Screen 8 (Recommendation):</strong> pause here — <em>this is the hero screen</em>. Show the computed Program Fit, Readiness score, Risk level, Recommended Next Step</li>
-                <li><strong>Screen 9 (Follow-Up):</strong> check "Send grant-program materials" + "Schedule a project-readiness session"</li>
-                <li>Click <strong>Finish</strong></li>
+                <li><strong>Step 1 (Context):</strong> Grant Program = TIRCP, Applicant Type = MPO / RTPA (funding pre-filled from the record)</li>
+                <li><strong>Step 2 (Guidance):</strong> pause on the TIRCP guidance card — GHG focus, June 2027 deadline, priorities</li>
+                <li><strong>Steps 3-5:</strong> click through Discovery / Alignment / Readiness — Applicant Eligible = Yes, Category Eligible = Yes, check 5 of the 6 readiness boxes, Admin Capacity = Yes</li>
+                <li><strong>Step 6 (Match):</strong> Match Required = No (TIRCP)</li>
+                <li><strong>Step 7 (TA):</strong> check "Application Preparation" + "Data or Performance Measures"</li>
+                <li><strong>Step 8 (Recommendation):</strong> pause here — <em>this is the hero screen</em>. Show the computed Program Fit = Strong Program Fit, Readiness 5/6, Risk = Low, Recommended Next Step = Advance to full application prep</li>
+                <li><strong>Step 9 (Follow-Up):</strong> check "Send grant-program materials" + "Schedule a project-readiness session"</li>
+                <li>Click <strong>Finish</strong> — toast confirms, refresh the record to see the writeback</li>
             </ul>
         </div>
         <div class="say">
-            <p>"Look what just happened. The Opportunity picked up the recommendation and readiness score. Two follow-up Tasks landed on the rep's timeline. That five-minute conversation is now a <em>durable</em> assessment on the record — the next person who touches this deal doesn't have to redo the discovery."</p>
-            <p>"And the piece I want your admin team to hear: when CTC updates a program's priorities next cycle — new eligible categories, changed match rules, new scoring criteria — a grants ops admin edits the flow's guidance and choices in an afternoon. No code, no vendor engagement, no release train."</p>
+            <p>"Look what just happened. The Opportunity picked up the recommendation, the readiness score, the risk level, the primary risk, and the full assessment summary. A follow-up Task landed on Sarah's timeline capturing both actions. That five-minute conversation is now a <em>durable</em> assessment on the record — the next person who touches this deal doesn't have to redo the discovery."</p>
+            <p>"And the piece I want your admin team to hear: this is declarative on the platform. When CTC updates a program's priorities next cycle — new eligible categories, changed match rules, new scoring criteria — a grants ops admin updates the options and the guidance content. No vendor engagement, no release train."</p>
         </div>
     </section>
 
@@ -466,7 +466,8 @@
             <li><label><input type="checkbox"> Grants Funnel Stage on MTC — TIRCP is <strong>Ready to Apply</strong></label></li>
             <li><label><input type="checkbox"> Grants Advisor Agentforce agent enabled + reachable</label></li>
             <li><label><input type="checkbox"> Clear prior test Tasks on MTC — TIRCP (Cycle 7) so the playbook's new follow-up tasks stand out</label></li>
-            <li><label><input type="checkbox"> Grant Program Fit Playbook flow is active and reachable from the Opportunity's <strong>Grants Playbook</strong> tab</label></li>
+            <li><label><input type="checkbox"> <strong>Grant Program Fit Playbook</strong> flow renders on the Opportunity's <strong>Grants Playbook</strong> tab (launcher button visible)</label></li>
+            <li><label><input type="checkbox"> MTC — TIRCP (Cycle 7) assessment fields (Program Fit Rating, Applicant Readiness, Risk Level, Recommended Next Step, Assessment Summary) are blank pre-demo</label></li>
         </ul>
     </section>
 
